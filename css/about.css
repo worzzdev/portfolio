@@ -13,8 +13,10 @@ body {
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
 }
-
 header {
   display: flex;
   justify-content: space-between;
@@ -42,40 +44,51 @@ img {
   height: auto;
 }
 
-.accueil {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 85vh;
-  padding: 0px 150px;
-  gap: 150px;
+.image img {
+  width: 300px;
+  height: auto;
 }
 
 .title {
-  font-size: 5rem;
+  font-size: 2.5rem;
 }
 
-.description {
-  font-size: 1.5rem;
+.intro {
+  color: #f1f3ff;
+  font-weight: bold;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  margin-top: 200px;
+}
+.texte {
+  max-width: 550px;
+}
+.texte p {
   color: #9ca3c9;
+  line-height: 1.6;
 }
-
-.btn {
-  background-color: #a855f7;
-  color: #070812;
-  padding: 12px 28px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-size: 2rem;
-  display: inline-block;
-}
-
 footer {
   display: flex;
   justify-content: center;
   gap: 40px;
   color: #00d1ff;
   font-size: 1.25rem;
+  margin-top: auto;
 }
 
 footer a {

@@ -13,6 +13,9 @@ body {
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
 }
 
 header {
@@ -42,32 +45,47 @@ img {
   height: auto;
 }
 
-.accueil {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 85vh;
-  padding: 0px 150px;
-  gap: 150px;
-}
-
 .title {
-  font-size: 5rem;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 40px;
 }
 
-.description {
-  font-size: 1.5rem;
+.projets {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 12px;
+}
+
+.card {
+  background-color: #111827;
+  border: #00d1ff 1px solid;
+  border-radius: 12px;
+  padding: 16px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h2 {
+  color: #00d1ff;
+}
+
+.card p {
   color: #9ca3c9;
 }
 
-.btn {
+.card a {
   background-color: #a855f7;
+  border-radius: 50px;
   color: #070812;
   padding: 12px 28px;
-  border-radius: 50px;
   text-decoration: none;
-  font-size: 2rem;
   display: inline-block;
+  font-size: 1rem;
 }
 
 footer {
@@ -76,6 +94,7 @@ footer {
   gap: 40px;
   color: #00d1ff;
   font-size: 1.25rem;
+  margin-top: auto;
 }
 
 footer a {

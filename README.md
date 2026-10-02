@@ -32,12 +32,7 @@ portfolio/
 ├── img/       # Logo et images
 ├── js/        # Scripts JavaScript
 ├── README.md
-└── systeme.md # Notes de conception et choix visuels
 ```
-
-## Identité visuelle
-
-Le site utilise un fond sombre, des nuances de bleu et un accent cyan (`#00d1ff`). La typographie et la palette sont documentées dans `systeme.md`.
 
 ## Contact
 

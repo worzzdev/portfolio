@@ -24,6 +24,7 @@ html {
 }
 
 body {
+  margin: 0;
   background-color: var(--bg-primary);
   color: var(--text-primary);
   font-family:
@@ -198,4 +199,82 @@ footer a {
 
 footer a:hover {
   opacity: 0.8;
+}
+
+@media (max-width: 760px) {
+  nav {
+    height: auto;
+    min-height: 64px;
+    padding: 10px 4%;
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+
+  .logo {
+    gap: 8px;
+  }
+
+  .logo img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .logo h2 {
+    font-size: 1.4rem;
+  }
+
+  .links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2px 6px;
+  }
+
+  .links a {
+    padding: 7px 10px;
+    font-size: 0.95rem;
+  }
+
+  .nav-btn {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .accueil {
+    height: auto;
+    min-height: 75vh;
+    padding: 48px 22px;
+    gap: 24px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .title {
+    font-size: clamp(2.35rem, 9vw, 3.5rem);
+  }
+
+  .description {
+    font-size: clamp(1.1rem, 4.5vw, 1.4rem);
+  }
+
+  .btn {
+    padding: 12px 22px;
+    font-size: 1.25rem;
+  }
+
+  .contact-links {
+    justify-content: center;
+  }
+
+  .contact-links .btn {
+    font-size: 1rem;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    gap: 6px 20px;
+    padding: 12px 16px;
+    font-size: 1rem;
+  }
 }

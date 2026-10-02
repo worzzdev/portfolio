@@ -1,0 +1,30 @@
+RESUME DU PROJET - PORTFOLIO WORZZ
+
+1. SYSTEME DE DESIGN (systeme.md)
+- Creation des variables CSS (:root) pour centraliser couleurs et typographies.
+- Utilisation de la vraie couleur d'accent cyan (#00d1ff) a la place du violet.
+- Correction des tailles de titres et de textes selon le guide systeme.md.
+- Ajout du defilement fluide (scroll-behavior: smooth).
+
+2. BARRE DE NAVIGATION (STYLE MODERNE)
+- Structure nav uniforme sur toutes les pages.
+- A gauche : Logo Worzz + Titre "Worzz".
+- Au centre : Liens Accueil, Projets, A propos, Contact.
+- A droite : Bouton d'action "Me contacter".
+- Hauteur de 70px, fond sombre (#111827) et alignement flexbox propre.
+
+3. BULLE DE PAGE ACTIVE
+- Ajout de la classe class="active" sur le lien de la page en cours.
+- Affichage d'une bulle lumineuse cyan autour du lien actif.
+
+4. PAGE CONTACT (contact.html)
+- Creation du fichier contact.html.
+- 2 boutons de contact directs :
+  * M'envoyer un mail (ouvre Gmail vers worzz.dev@gmail.com)
+  * Mon TikTok (@worzz.dev)
+
+5. FOOTER EPURE
+- Conservation du strict minimum sur toutes les pages :
+  * Version (v0.01)
+  * Copyright 2026 Worzz
+  * Lien GitHub

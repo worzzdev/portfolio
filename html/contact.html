@@ -1,64 +1,61 @@
 <!doctype html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070812" />
+    <meta name="description" content="Contacte Worzz par e-mail ou retrouve ses créations sur TikTok." />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <title>Contact - Worzz Portfolio</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <main id="contenu" class="page-shell contact-page">
+      <section class="contact-intro" aria-labelledby="contact-title">
+        <p class="eyebrow">Restons en contact</p>
+        <h1 id="contact-title">On se <span>parle ?</span></h1>
+        <p>Une question, une idée de projet ou simplement envie d’échanger ? Choisis le moyen de contact qui te convient.</p>
+      </section>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/accueil.css" />
-  <title>Contact - Worzz Portfolio</title>
-</head>
+      <section class="contact-grid" aria-label="Mes moyens de contact">
+        <article class="contact-card">
+          <span class="contact-icon" aria-hidden="true">@</span>
+          <h2>Par e-mail</h2>
+          <p>Pour un message ou une proposition, je te répondrai dès que possible.</p>
+          <a class="button" href="mailto:worzz.dev@gmail.com" data-open-contact-form aria-controls="contact-form" aria-expanded="false">Ouvrir le formulaire <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="contact-card">
+          <span class="contact-icon" aria-hidden="true">♪</span>
+          <h2>Sur TikTok</h2>
+          <p>Retrouve mes contenus et les coulisses de mon apprentissage.</p>
+          <a class="button" href="https://www.tiktok.com/@worzz.dev" target="_blank" rel="noopener noreferrer">@worzz.dev <span aria-hidden="true">↗</span></a>
+        </article>
+      </section>
 
-<body>
-  <header>
-    <nav>
-      <a href="index.html" class="logo">
-        <img src="../img/worzz.png" alt="Logo" />
-        <h2>Worzz</h2>
-      </a>
-      <div class="links">
-        <a href="index.html">Accueil</a>
-        <a href="projets.html">Projets</a>
-        <a href="about.html">À propos</a>
-        <a href="contact.html" class="active">Contact</a>
-      </div>
-      <a href="contact.html" class="nav-btn">Me contacter</a>
-    </nav>
-  </header>
-
-  <main>
-    <div class="accueil">
-      <div>
-        <h1 class="title">Me Contacter</h1>
-        <p class="description">
-          Retrouve-moi sur mes réseaux ou envoie-moi un message par email !
-        </p>
-        <div class="contact-links">
-          <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=worzz.dev@gmail.com"
-            target="_blank"
-            rel="noopener"
-            class="btn"
-            >M'envoyer un mail</a
-          >
-          <a
-            href="https://www.tiktok.com/@worzz.dev"
-            target="_blank"
-            rel="noopener"
-            class="btn btn-secondary"
-            >Mon TikTok</a
-          >
+      <form class="contact-form" id="contact-form" action="mailto:worzz.dev@gmail.com" method="post" enctype="text/plain" hidden>
+        <div class="form-heading">
+          <div>
+            <p class="eyebrow">Ton message</p>
+            <h2>Écris-moi</h2>
+          </div>
+          <button class="close-form" type="button" data-close-contact-form aria-label="Fermer le formulaire">×</button>
         </div>
-      </div>
-    </div>
-  </main>
+        <div class="form-fields">
+          <label for="contact-subject">Pourquoi me contactes-tu ?</label>
+          <input id="contact-subject" name="subject" placeholder="Le sujet de ton message" required />
 
-  <footer>
-    <p>v0.01</p>
-    <p>© 2026 Worzz</p>
-    <p>
-      <a href="https://github.com/worzzdev" class="github" target="_blank" rel="noopener">GitHub</a>
-    </p>
-  </footer>
-</body>
+          <label for="contact-message">Description</label>
+          <textarea id="contact-message" name="message" rows="6" placeholder="Décris ta demande ou ton idée…" required></textarea>
+        </div>
+        <p class="form-note">Le formulaire ouvre un brouillon dans Gmail. Vérifie ton message puis clique sur « Envoyer » dans Gmail.</p>
+        <button class="button form-submit" type="submit">Préparer l’e-mail <span aria-hidden="true">↗</span></button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        <a class="button button-secondary mail-draft-link" id="mail-draft-link" href="#" target="_blank" rel="noopener noreferrer" hidden>Ouvrir le brouillon dans Gmail <span aria-hidden="true">↗</span></a>
+      </form>
+    </main>
 
+    <script src="../js/layout.js" defer></script>
+    <script src="../js/script.js" defer></script>
+  </body>
 </html>

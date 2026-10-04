@@ -3,51 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070812" />
+    <meta name="description" content="Découvre le portfolio de Worzz, développeur web en apprentissage, ses projets et son parcours." />
+    <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/accueil.css" />
     <title>Worzz Portfolio</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html" class="logo">
-          <img src="../img/worzz.png" alt="Logo" />
-          <h2>Worzz</h2>
-        </a>
-        <div class="links">
-          <a href="index.html" class="active">Accueil</a>
-          <a href="projets.html">Projets</a>
-          <a href="about.html">À propos</a>
-          <a href="contact.html">Contact</a>
-        </div>
-        <a href="contact.html" class="nav-btn">Me contacter</a>
-      </nav>
-    </header>
-
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
     <main>
-      <div class="accueil">
-        <div>
-          <h1 class="title">Salut ! C'est Worzz</h1>
-          <p class="description">
-            Je débute dans le dev et je fais des projets afin de montrer mon
-            avancée
-          </p>
+      <section class="hero" id="contenu" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Portfolio · Développeur web en apprentissage</p>
+          <h1 class="title" id="hero-title">Salut ! C’est <span>Worzz</span></h1>
+          <p class="description">Je débute dans le développement web et je crée des projets pour montrer mes progrès.</p>
         </div>
-        <a href="projets.html" class="btn">Voir les projets</a>
-      </div>
+      </section>
     </main>
 
-    <footer>
-      <p>v0.01</p>
-      <p>© 2026 Worzz</p>
-      <p>
-        <a
-          href="https://github.com/worzzdev"
-          class="github"
-          target="_blank"
-          rel="noopener"
-          >GitHub</a
-        >
-      </p>
-    </footer>
+    <script src="../js/layout.js" defer></script>
   </body>
 </html>
